@@ -13,43 +13,43 @@
 
 ### 🚀 Проекты
 
-#### 📊 [Converter](https://github.com/IljiaPolstianoy/Converter)
+#### 📅 [Explore With Me](https://github.com/IljiaPolstianoy/java-plus-graduation)
 
-**Сделал** backend-приложение для конвертации валют с автоматическим обновлением курсов, **которое** через REST API обеспечивает актуальными данными любое количество клиентских запросов, **давая** пользователям надёжный и предсказуемый инструмент для финансовых расчётов без ручного поиска курсов.
+**Сделал** микросервис-афишу для поиска и организации мероприятий, **который** через модульную архитектуру (core, stats, infra) позволяет организаторам публиковать события, а пользователям — управлять регистрацией, избавляясь от информационного шума, **а также** выдерживает пиковые нагрузки благодаря асинхронной обработке через Kafka + Avro/Protobuf и отказоустойчивости (Resilience4j, Spring Cloud Config, Eureka).
 
-**Стек:** Java 21, Spring Boot, REST API, JUnit, Mockito, Lombok, Checkstyle
-
----
-
-#### 🎬 [Filmorate](https://github.com/IljiaPolstianoy/java-filmorate)
-
-**Сделал** backend-сервис рекомендаций фильмов с продуманной схемой базы данных (пользователи, друзья, лайки, жанры, рейтинги), **который** поддерживает масштабирование функциональности без изменения существующей структуры, **позволяя** повышать вовлечённость пользователей через персонализированные рекомендации.
-
-**Стек:** Java 21, Spring Boot, Spring JDBC, H2 Database, REST API, Logbook
+**Стек:** Java 21, Spring Boot/Cloud, PostgreSQL, Hibernate, gRPC, Apache Kafka, Avro/Protobuf, Spring Cloud Gateway, Eureka, Resilience4j, Micrometer, Docker, Lombok, MapStruct
 
 ---
 
 #### 🔄 [ShareIt](https://github.com/IljiaPolstianoy/java-shareit)
 
-**Сделал** микросервисную платформу для шеринга вещей, разделённую на два независимых модуля (gateway и server), **которая** даёт возможность изолированно развивать и масштабировать каждый компонент, **в итоге** формируя гибкую систему обмена, снижающую затраты пользователей на покупку новых вещей.
+**Сделал** двухмодульную платформу для шеринга вещей (gateway + server), **которая** через систему бронирования со статусами и механизм отзывов формирует саморегулируемое сообщество, **позволяя** владельцам делиться простаивающими предметами, а арендаторам — экономить на покупках.
 
-**Стек:** Java 21, Spring Boot, Spring Cloud Gateway, Spring Data JPA, PostgreSQL, Hibernate, Lombok, JUnit, Mockito
+**Стек:** Java 21, Spring Boot, Spring MVC, Spring Cloud Gateway, PostgreSQL, Spring Data JPA, Hibernate, Lombok, Jakarta Validation, Spring Boot Actuator
 
 ---
 
 #### 🏠 [Smart Home Tech](https://github.com/IljiaPolstianoy/plus-smart-home-tech.git)
 
-**Сделал** многомодульную микросервисную платформу для управления экосистемой умного дома, **которая** обрабатывает телеметрию в реальном времени через Kafka и gRPC, обеспечивая согласованность данных между сервисами коммерческого блока, **тем самым** создавая единую надёжную инфраструктуру для управления устройствами и бесшовного расширения экосистемы.
+**Сделал** многомодульную микросервисную экосистему для умного дома, **которая** обрабатывает телеметрию в реальном времени (gRPC → Kafka (Avro) → агрегатор/анализатор) и объединяет коммерческий блок (магазин, корзина, склад) через REST/gRPC с Service Discovery, **тем самым** создавая единую надёжную инфраструктуру для управления устройствами и бесшовного расширения экосистемы.
 
-**Стек:** Java 21, Spring Boot, Spring Cloud, gRPC, Apache Kafka, Avro, Protobuf, PostgreSQL, Eureka, Config Server, Docker
+**Стек:** Java 21, Spring Boot/Cloud, PostgreSQL, Hibernate, gRPC, Apache Kafka, Avro/Protobuf, Eureka, Spring Cloud Config, OpenFeign, Lombok
 
 ---
 
-#### 📅 [Explore With Me](https://github.com/IljiaPolstianoy/explore-with-me)
+#### 📊 [Converter](https://github.com/IljiaPolstianoy/Converter.git)
 
-**Сделал** микросервис для поиска и организации мероприятий с разделением на модули афиши, регистрации и статистики, **который** выдерживает высокую нагрузку на запись (бронирование) благодаря асинхронной обработке через Kafka и отказоустойчивости через Resilience4j, **что обеспечивает** предсказуемую работу для организаторов и участников даже в моменты пиковых регистраций.
+**Сделал** REST-сервис для конвертации валют с автоматическим обновлением курсов из внешних источников, **который** благодаря чистой архитектуре по SOLID и высокому покрытию тестами (JUnit + Mockito) даёт пользователям надёжный и предсказуемый инструмент для финансовых расчётов.
 
-**Стек:** Java 21, Spring Boot, Spring Cloud, Kafka, gRPC, PostgreSQL, Eureka, Gateway, Config Server, Resilience4j, Docker
+**Стек:** Java 21, Spring Boot, Spring MVC, REST Client, SLF4J, Lombok, JUnit 5, Mockito, Postman, Checkstyle
+
+---
+
+#### 🎬 [Filmorate](https://github.com/IljiaPolstianoy/java-filmorate.git)
+
+**Сделал** backend для кинорекомендаций с продуманной реляционной схемой БД (пользователи, фильмы, жанры, рейтинги, лайки, друзья), **который** формирует персонализированные подборки на основе анализа лайков и предпочтений друзей, **повышая** вовлечённость пользователей через релевантные рекомендации.
+
+**Стек:** Java 21, Spring Boot, Spring MVC, Spring JDBC, H2 Database, Lombok, Jakarta Validation, Spring Boot Test
 
 ---
 
@@ -61,6 +61,6 @@
 
 ---
 
-**Готов выполнить тестовое задание и пройти собеседование!**
+🌟 **Сейчас нахожусь в активном поиске работы. Буду рад новым вызовам и интересным проектам!** 🌟
 
 На связи в Telegram: [@IjljiaPol](https://t.me/IjljiaPol)
